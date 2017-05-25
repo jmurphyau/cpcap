@@ -1,6 +1,8 @@
 
-module c_pcap [system] {
-  header "/usr/include/pcap.h"
-  link "pcap"
-  export *
+module cpcap [system] {
+module libpcap {
+    header "/usr/include/pcap.h"
+    link "pcap"
+    export *
+  }
 }
